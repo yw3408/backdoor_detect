@@ -1,5 +1,24 @@
-#Backdoor Detection and Clease
+# Backdoor Detection and Cleanse
+
+## Group Member
+
+Yunrui Huang(yh2910)
+
+
+
+## Evironment
+
+
+
+## To run 
+
+To run `Fine_Pruning_Weight_Pruning.ipynb`, please modify the  
+
+Please put the validation and test datasets under "/content/drive/MLsecurity_project/data/" directory.
+Also, please put model files under "/content/drive/MLsecurity_project/models/" directory.
+
 ## Instruction for running the Entropy filter notebook:
+
 First put all the data.h files under the path below:
 "/content/drive/MyDrive/MLsecurity_project/data/"
 And also put all the model.h files under the path below:
