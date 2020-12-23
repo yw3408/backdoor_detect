@@ -20,6 +20,8 @@ Yichen Wang(yw4604)
 
 `Tensorflow == 1.x`(for`neural_clease.ipythnb` to run)
 
+`tensorflow-model-optimization`
+
 `Keras => 2.x`
 
 `h5py`
@@ -30,7 +32,21 @@ Yichen Wang(yw4604)
 
 `Fine_Pruning_Weight_Pruning.ipynb`
 
-* 
+* `clean_data_filename` => customized clean validation data path
+* `test_data_filename` =>customized clean test data path
+* `poison_data_filename`=>customized poison data path
+
+
+
+`Entropy_filter.ipythnb`
+
+* `clean_data_filename` =>customized clean validation data path
+
+* `test_clean_data_filename` =>customized clean test  data path
+
+* `poison_data_filename` => customized poison data path
+
+  
 
 `neural_clease.ipythnb`
 
@@ -44,14 +60,10 @@ Yichen Wang(yw4604)
 
   
 
-`Entropy_filter.ipythnb`
-
-
-
 `BBD.ipythnb`
 
 * `DATA_DIR` => customized data folder
-* `CLEAN_DATA_FILE` => customized clean data path
+* `CLEAN_DATA_FILE` => customized clean validation data path
 * `POISON_DATA_FILE`=> customized poison data path
 * `MODEL_DIR` => customized model folder
 * `BAD_MODEL_FILE` => customized Badnet path
