@@ -1,31 +1,55 @@
-# Backdoor Detection and Cleanse
+# BBD:Bimodel Backdoor Defence
+
+BBD is a Backdoor Defence Technique design for correctly recognize clean data and identify poisoned data as `N+1` Label.
 
 ## Group Member
 
 Yunrui Huang(yh2910)
 
+Yihong Wang(yw3408)
 
+Jiru Wang(jw6288)
+
+Yichen Wang(yw4604)
 
 ## Evironment
 
+`Python=>3.x`
+
+`Jupyter Notebook`
+
+`Tensorflow == 1.x`(for`neural_clease.ipythnb` to run)
+
+`Keras => 2.x`
+
+`h5py`
+
+## Run Instruction 
+
+ To run source code in `/src`, please files in Jupyter Notebook and modify data and model path into customized path.
+
+`Fine_Pruning_Weight_Pruning.ipynb`
+
+* 
+
+`neural_clease.ipythnb`
+
+* 
+
+`Entropy_filter.ipythnb`
 
 
-## To run 
 
-To run `Fine_Pruning_Weight_Pruning.ipynb`, please modify the  
+All files can run idenpendently and with differnt purpose.
 
-Please put the validation and test datasets under "/content/drive/MLsecurity_project/data/" directory.
-Also, please put model files under "/content/drive/MLsecurity_project/models/" directory.
 
-## Instruction for running the Entropy filter notebook:
 
-First put all the data.h files under the path below:
-"/content/drive/MyDrive/MLsecurity_project/data/"
-And also put all the model.h files under the path below:
-"/content/drive/MyDrive/MLsecurity_project/models/"
-Then, you could just run the whole notebook. 
-If you want to use your own test data, just replace the input data on this three parts:
-Model repair->For sunglasses_bd_net.h5->Input data
-Model repair->For multi_trigger_multi_target_bd_net.h5->Input data
-Model repair->anonymous_bd_net.h5->Input data
+## File Describtion
+
+| File                                | Input                      | Output              | Describtion |
+| ----------------------------------- | -------------------------- | ------------------- | ----------- |
+| `neural_clease.ipythnb`             | `<Badnet, Clean_Data>`     | `potential_trigger` |             |
+| `Fine_Pruning_Weight_Pruning.ipynb` | `<Badnet, Clean_Data>`     | `Repaired_Model`    |             |
+| `Entropy_filter.ipythnb`            | `Badnet`                   |                     |             |
+| `BBD.ipythnb`                       | `<Badnet, Repaired Model>` |                     |             |
 
