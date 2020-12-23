@@ -34,11 +34,28 @@ Yichen Wang(yw4604)
 
 `neural_clease.ipythnb`
 
-* 
+* `DATA_DIR` => customized data folder
+
+* `DATA_FILE` => customized clean data path
+
+* `MODEL_DIR` => customized model folder
+
+* `MODEL_FILE` => customized Badnet path
+
+  
 
 `Entropy_filter.ipythnb`
 
 
+
+`BBD.ipythnb`
+
+* `DATA_DIR` => customized data folder
+* `CLEAN_DATA_FILE` => customized clean data path
+* `POISON_DATA_FILE`=> customized poison data path
+* `MODEL_DIR` => customized model folder
+* `BAD_MODEL_FILE` => customized Badnet path
+* `CLEAN_MODEL_FILE` => customized clean model path
 
 All files can run idenpendently and with differnt purpose.
 
